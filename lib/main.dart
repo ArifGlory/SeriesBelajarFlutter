@@ -52,7 +52,11 @@ class _MyAppState extends State<MyApp> {
                     Row(
                       children: [
                         CircleAvatar(),
+                        SizedBox(
+                          width: 20,
+                        ),
                         Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(" Name : ${data['Name']}"),
                             Text(" Age : ${data['Age']}"),
